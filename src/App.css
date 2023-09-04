@@ -1,0 +1,81 @@
+/* Variables */
+:root {
+  --bg-color: #0f172b;
+  --text-color: #f7f7f7;
+  --text-color-2: #94a3b8;
+  --text-color-3: #38bcf8;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.gradient-wrapper {
+  /* background: #0f172b; */
+  position: relative;
+}
+
+.bg-grid {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(148 163 184 / 0.05)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+.frame {
+  position: relative;
+  display: block;
+  align-self: start;
+  isolation: isolate;
+}
+
+.anchor {
+  z-index: 1;
+  transition: all 0.2s;
+  position: relative;
+  max-width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+
+.anchor:hover {
+  text-decoration: none;
+  transform: translate(-1px, -1px);
+}
+
+.button {
+  display: block;
+  z-index: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #0f172b;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s;
+  position: relative;
+  transform: translate(0);
+  box-shadow: 1px 1px 1rem rgb(26 26 26 / 15%);
+}
+
+.button:hover {
+  text-decoration: none;
+  transform: translate(-1px, -1px);
+}
+
+.button_bg-grad {
+  z-index: -2;
+  background: linear-gradient(20deg, #ddedff 0%, var(--text-color-3) 100%);
+  background-position: 0 0;
+  background-size: cover;
+  border-radius: 4px;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  transform: translate(0.5rem, 0.5rem);
+  pointer-events: none;
+}
