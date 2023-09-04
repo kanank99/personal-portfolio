@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedTitle from "./AnimatedTitle";
 
 function Hero() {
   return (
@@ -9,12 +10,16 @@ function Hero() {
             <h1 className="text-base tracking-tight text-[#38bcf8]">
               Hi, my name is
             </h1>
-            <h1 className="text-[2rem] md:text-6xl leading-10 lg:text-7xl font-extrabold text-white tracking-wide mt-2 whitespace-nowrap">
-              Kanan Kontorovsky.
-            </h1>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white/60 whitespace-nowrap">
-              I build for everyone
-            </h2>
+            <AnimatedTitle
+              text="Kanan Kontorovsky."
+              color="text-[#f7f7f7]"
+              threshold={0.5}
+            />
+            <AnimatedTitle
+              text="I build for everyone"
+              color="text-white/60"
+              threshold={1}
+            />
             <p className="text-lg lg:w-[90%] text-[#f7f7f7] mt-6 font-light leading-6">
               I specialize in
               <span className="text-3"> React Front-End Development</span>,
