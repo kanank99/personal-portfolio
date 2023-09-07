@@ -52,14 +52,14 @@ function AnimatedTitle(props) {
       opacity: 1,
       y: `0em`,
       transition: {
-        duration: 1,
+        duration: props.duration || 0.5,
         ease: [0.2, 0.65, 0.3, 0.9],
       },
     },
   };
   return (
     <div
-      className={`${props.color} text-4xl md:text-6xl lg:text-7xl font-extrabold whitespace-nowrap`}
+      className={`${props.color} z-50 text-4xl md:text-6xl lg:text-7xl font-extrabold whitespace-nowrap`}
       aria-label={text}
       role="heading"
       aria-level={1}
