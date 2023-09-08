@@ -16,8 +16,8 @@ function Hero() {
       />
       <div className="bg-grid h-[100svh] w-full flex items-center justify-center">
         <div className="hero-container text-left w-[824px] lg:w-[1004px]">
-          <div className="hero-text flex flex-col items-center justify-center md:justify-normal md:items-start  gap-2 lg:gap-4 sm:p-8">
-            <h1 className="font-[500] tracking-tight text-[#38bcf8]">
+          <div className="hero-text flex flex-col items-center justify-center md:justify-normal md:items-start  gap-2 lg:gap-4 sm:p-8 lg:pl-10">
+            <h1 className="font-[500] tracking-tight text-[#38bcf8] mb-6 sm:mb-0">
               Hi, my name is
             </h1>
             <AnimatedTitle
@@ -32,7 +32,7 @@ function Hero() {
               threshold={1}
               duration={3}
             />
-            <p className=" text-sm text-center md:text-start sm:text-lg lg:text-xl lg:w-[90%] text-[#f7f7f7] mt-6 font-light leading-6">
+            <p className=" text-center md:text-start sm:text-lg lg:text-xl w-[80%] lg:w-[90%] text-[#f7f7f7] mt-6 font-light leading-6">
               I specialize in
               <span className="text-3 font-[500]"> React Front-End Development</span>,
               where I bring web interfaces to life with creativity and
@@ -40,7 +40,7 @@ function Hero() {
               experiences that showcase the full potential of React.
             </p>
             <div class="mt-5 relative block isolate self-center md:self-start">
-              <a className="anchor cursor-none" href="https://www.flowchef.co/">
+              <a className="anchor" href="https://www.flowchef.co/">
                 <div class="button font-bold">Get In Touch</div>
                 <div class="button_bg-grad"></div>
               </a>
