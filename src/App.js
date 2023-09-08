@@ -1,5 +1,6 @@
 import "./App.css";
 import Hero from "./components/Hero";
+import Links from "./components/Links";
 import { useEffect } from "react";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         </svg>
       </span>
       <Hero />
+      <Links />
     </div>
   );
 }
