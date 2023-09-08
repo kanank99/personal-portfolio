@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <div className="gradient-wrapper">
-      <motion.div className='blackBg absolute top-0 h-[100vh] w-[100vw] bg-black z-40'
+      <motion.div className='blackBg absolute top-0 h-[100vh] w-[100vw] bg-[#060606] z-40'
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
         transition={{ duration: 1.2, delay: 1.5 }}
@@ -15,9 +15,9 @@ function Hero() {
 
       />
       <div className="bg-grid h-[100svh] w-full flex items-center justify-center">
-        <div className="hero-container text-left w-[824px]">
-          <div className="hero-text flex flex-col gap-2 lg:gap-4 p-8">
-            <h1 className="text-base tracking-tight text-[#38bcf8]">
+        <div className="hero-container text-left w-[824px] lg:w-[1004px]">
+          <div className="hero-text flex flex-col items-center justify-center md:justify-normal md:items-start  gap-2 lg:gap-4 sm:p-8">
+            <h1 className="font-[500] tracking-tight text-[#38bcf8]">
               Hi, my name is
             </h1>
             <AnimatedTitle
@@ -32,14 +32,14 @@ function Hero() {
               threshold={1}
               duration={3}
             />
-            <p className="text-lg lg:w-[90%] text-[#f7f7f7] mt-6 font-light leading-6">
+            <p className=" text-sm text-center md:text-start sm:text-lg lg:text-xl lg:w-[90%] text-[#f7f7f7] mt-6 font-light leading-6">
               I specialize in
               <span className="text-3 font-[500]"> React Front-End Development</span>,
               where I bring web interfaces to life with creativity and
               precision. My focus is on creating immersive, user-centric
               experiences that showcase the full potential of React.
             </p>
-            <div class="frame mt-5">
+            <div class="mt-5 relative block isolate self-center md:self-start">
               <a className="anchor cursor-none" href="https://www.flowchef.co/">
                 <div class="button font-bold">Get In Touch</div>
                 <div class="button_bg-grad"></div>

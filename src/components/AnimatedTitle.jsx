@@ -59,7 +59,7 @@ function AnimatedTitle(props) {
   };
   return (
     <div
-      className={`${props.color} z-50 text-4xl md:text-6xl lg:text-7xl font-extrabold whitespace-nowrap`}
+      className={`${props.color} z-50 text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold whitespace-nowrap`}
       aria-label={text}
       role="heading"
       aria-level={1}
