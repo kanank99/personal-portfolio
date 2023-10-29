@@ -21,9 +21,9 @@ function AboutMe() {
     //     });
     // }, []);
     return (
-        <>
+        <div className='aboutme-container'>
             <hr className='border-[#38bcf8] border-opacity-70 w-full mx-auto' />
-            <div className='bg-[#0f172a] h-[1000px] md:h-[650px] w-full flex items-center justify-center text-center md:text-start font-sans'>
+            <div className='h-[1000px] md:h-[650px] w-full flex items-center justify-center text-center md:text-start font-sans'>
                 {/* <span id="cursor">
                 <svg height="30" width="30">
                     <circle cx="15" cy="15" r="12" stroke-width="0" fill="#f7f8fa" />
@@ -44,7 +44,7 @@ function AboutMe() {
                 </div>
             </div>
             <hr className='border-[#38bcf8] border-opacity-70 w-full mx-auto' />
-        </>
+        </div>
     )
 }
 

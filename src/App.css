@@ -116,7 +116,25 @@ body {
   pointer-events: none;
 }
 
+.aboutme-container {
+  background: radial-gradient(circle at center 0%, rgb(63, 61, 192) -200%, var(--bg-color) 60%) no-repeat;
+}
+
+.projects-container {
+  background: radial-gradient(circle at center, rgb(63, 61, 192) -100%, var(--bg-color) 60%) no-repeat;
+}
+
 .box-shadow-gray {
   box-shadow: inset 0 0 0 1px #ffffff1a;
   ;
+}
+
+.link-w-svg:hover svg path {
+  fill: var(--text-color-3);
+  transition: all 0.2s;
+}
+
+.link-w-svg:hover p {
+  color: var(--text-color-3);
+  transition: all 0.2s;
 }
