@@ -1,6 +1,7 @@
 import React from 'react'
 // import { useEffect } from 'react'
-import Kanan1 from '../assets/images/kanan1.png'
+// import Kanan1 from '../assets/images/kanan1.png'
+import Me from '../assets/images/me.JPG'
 
 function AboutMe() {
     // useEffect(() => {
@@ -22,7 +23,8 @@ function AboutMe() {
     // }, []);
     return (
         <div className='aboutme-container'>
-            <hr className='border-[#38bcf8] border-opacity-70 w-full mx-auto' />
+            {/* <hr className='border-[#38bcf8] border-opacity-70 w-full mx-auto' /> */}
+            <hr className='w-full' />
             <div className='h-[1000px] md:h-[650px] w-full flex items-center justify-center text-center md:text-start font-sans'>
                 {/* <span id="cursor">
                 <svg height="30" width="30">
@@ -33,7 +35,7 @@ function AboutMe() {
                     <h1 className='md:hidden text-[#38bcf8] uppercase text-lg font-semibold'>About Me</h1>
                     <div className='flex-1 relative'>
 
-                        <img className='h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px] grayscale hover:grayscale-0 transition-all duration-500 ease-in-out rounded-3xl' src={Kanan1} alt='Kanan Kontorovsky' />
+                        <img className='h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px] grayscale hover:grayscale-0 transition-all duration-500 ease-in-out rounded-3xl' src={Me} alt='Kanan Kontorovsky' />
                     </div>
                     <div className='flex-1 h-full p-4 md:p-0'>
                         <h1 className='hidden md:block text-[#38bcf8] uppercase text-lg font-semibold mb-[1rem]'>About Me</h1>
@@ -43,7 +45,7 @@ function AboutMe() {
                     </div>
                 </div>
             </div>
-            <hr className='border-[#38bcf8] border-opacity-70 w-full mx-auto' />
+            <hr className='w-full' />
         </div>
     )
 }
