@@ -1,8 +1,29 @@
 import React from "react";
+import { useRef } from "react";
 import AnimatedTitle from "./AnimatedTitle";
 import { motion } from "framer-motion";
 
 function Hero() {
+
+  const imageRef = useRef(null);
+
+  const handleMouseMove = (e) => {
+    const imageElement = imageRef.current;
+    let rect = imageElement.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+
+    let dx = (x - rect.width / 2) / (rect.width / 2);
+    let dy = (y - rect.height / 2) / (rect.height / 2);
+
+    imageElement.style.transform = `perspective(500px) rotateY(${dx * 1}deg) rotateX(${-dy * 1}deg)`;
+  };
+
+  const handleMouseLeave = () => {
+    const imageElement = imageRef.current;
+    imageElement.style.transform = '';
+  };
+
   return (
     <div className="gradient-wrapper">
       <motion.div className='blackBg absolute top-0 h-[100vh] w-[100vw] bg-[#060606] z-40'
@@ -14,10 +35,10 @@ function Hero() {
         }
 
       />
-      <div className="bg-grid h-[100svh] w-full flex items-center justify-center">
-        <div className="hero-container text-left w-[824px] lg:w-[1004px]">
+      <div className="bg-grid h-[100svh] w-full flex items-center justify-center" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} >
+        <div className="hero-container text-left w-[824px] lg:w-[1004px]" ref={imageRef}>
           <div className="hero-text flex flex-col items-center justify-center md:justify-normal md:items-start  gap-2 lg:gap-4 sm:p-8 lg:pl-10">
-            <h1 className="font-[500] tracking-tight text-[#38bcf8] mb-6 sm:mb-0">
+            <h1 className="font-[500] tracking-tight text-3 mb-6 sm:mb-0">
               Hi, my name is
             </h1>
             <AnimatedTitle

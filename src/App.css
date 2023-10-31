@@ -2,6 +2,7 @@
 :root {
   --bg-color: #0f172b;
   --text-color: #f7f7f7;
+  --text-color-1: #c7d5e9;
   --text-color-2: #94a3b8;
   --text-color-3: #38bcf8;
   --cursorX: 0;
@@ -14,6 +15,10 @@
 
 .text-2 {
   color: var(--text-color-2);
+}
+
+.text-1 {
+  color: var(--text-color-1);
 }
 
 * {
