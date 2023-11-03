@@ -23,9 +23,9 @@ export default function Project(props) {
     };
 
     return (
-        <div className={`shine flex ${props.flexDirection} flex-col bg-[#1e293b99] box-shadow-gray p-5 rounded-2xl gap-5`}>
+        <div className={`flex ${props.flexDirection} flex-col bg-[#1e293b99] box-shadow-gray p-5 rounded-2xl gap-5`}>
             <div className='box-shadow-gray rounded-2xl p-[1px]'>
-                <img className='w-[50rem] max-h-[320px] rounded-2xl' src={props.image} alt={props.imageAlt} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} ref={imageRef} />
+                <img className='w-[50rem] min-h-[360px] rounded-2xl' src={props.image} alt={props.imageAlt} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} ref={imageRef} />
             </div>
             <div className='flex flex-col gap-5 justify-center items-center text-center bg-[#293548] rounded-2xl box-shadow-gray lg:max-w-[25rem] py-5 lg:py-0'>
                 <h3 className='text-3 uppercase text-lg font-semibold'>{props.title}</h3>

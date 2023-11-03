@@ -151,3 +151,33 @@ hr {
   color: var(--text-color-3);
   transition: all 0.2s;
 }
+
+.animate-rotate {
+  animation: rotate 9s linear infinite;
+}
+
+.still-child {
+  animation: rotate-reverse 9s linear infinite;
+}
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-reverse {
+
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
