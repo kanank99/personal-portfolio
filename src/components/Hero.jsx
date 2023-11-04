@@ -60,11 +60,33 @@ function Hero() {
               precision. My focus is on creating immersive, user-centric
               experiences that showcase the full potential of React.
             </p>
-            <div class="mt-5 relative block isolate self-center md:self-start">
-              <a className="anchor" href="https://www.flowchef.co/">
-                <div class="button font-bold">Get In Touch</div>
-                <div class="button_bg-grad"></div>
-              </a>
+            <div className='mt-5 flex justify-between w-full'>
+              <div class="relative block isolate self-center md:self-start">
+                <a className="anchor" href="https://www.flowchef.co/">
+                  <div class="button font-bold">Get In Touch</div>
+                  <div class="button_bg-grad"></div>
+                </a>
+
+              </div>
+              <div class="skills flex items-center gap-3">
+                <p className="text-0 text-3xl">My Stack |</p>
+                <div class="logos">
+                  <ul className="flex gap-5">
+                    <li>
+                      <img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon" className="transition-all hover:scale-110 hover:-translate-y-2" />
+                    </li>
+                    <li>
+                      <img src="https://skillicons.dev/icons?i=js,ts" alt="skill-icon" className="transition-all hover:scale-110 hover:-translate-y-2" />
+                    </li>
+                    <li>
+                      <img src="https://skillicons.dev/icons?i=react,next" alt="skill-icon" className="transition-all hover:scale-110 hover:-translate-y-2" />
+                    </li>
+                    <li>
+                      <img src="https://skillicons.dev/icons?i=tailwind,scss" alt="skill-icon" className="transition-all hover:scale-110 hover:-translate-y-2" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

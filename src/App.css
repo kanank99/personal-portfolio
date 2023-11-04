@@ -21,6 +21,10 @@
   color: var(--text-color-1);
 }
 
+.text-0 {
+  color: var(--text-color);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
