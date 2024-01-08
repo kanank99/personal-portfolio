@@ -62,7 +62,7 @@ function Hero() {
             </p>
             <div className='mt-5 flex justify-between w-full'>
               <div class="relative block isolate self-center md:self-start">
-                <a className="anchor" href="https://www.flowchef.co/">
+                <a className="anchor" href="https://www.linkedin.com/in/kanan-kontorovsky-052405228" target="_blank">
                   <div class="button font-bold">Get In Touch</div>
                   <div class="button_bg-grad"></div>
                 </a>
